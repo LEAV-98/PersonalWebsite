@@ -93,7 +93,8 @@ li {
 }
 /* Section */
 .trabajos h2,
-.habilidades h2 {
+.habilidades h2,
+.contactos h2 {
   text-align: center;
   padding: 1.5rem 0;
 }
