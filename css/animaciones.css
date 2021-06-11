@@ -1,0 +1,41 @@
+.trabajos {
+  animation-name: cards;
+  animation-duration: 2s;
+}
+@keyframes cards {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+.nav ul {
+  animation-name: nav;
+  animation-duration: 2s;
+}
+.banner-info h1::after {
+  content: "|";
+  font-size: 3rem;
+  display: inline-block;
+  animation: cards;
+  padding-left: 0.5rem;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes nav {
+  0% {
+    transform: translateY(-1rem);
+    transform: scale(1.1);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+}
+.banner-img:hover {
+  transform: translateX(3rem);
+}
+.banner-img {
+  transition: transform 1s ease;
+}
